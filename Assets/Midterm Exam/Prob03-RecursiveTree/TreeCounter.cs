@@ -18,6 +18,8 @@ namespace MidtermExam.Prob03
         {
             // TODO: เขียนคำตอบแทนคำสั่ง throw ด้านล่าง
             throw new NotImplementedException();
+
+
         }
     }
 }

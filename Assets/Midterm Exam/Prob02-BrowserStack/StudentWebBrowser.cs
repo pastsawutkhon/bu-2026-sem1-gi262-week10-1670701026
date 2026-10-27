@@ -41,7 +41,10 @@ namespace MidtermExam.Prob02
         public void Back()
         {
             // TODO: เขียนคำตอบแทนคำสั่ง throw exception ด้านล่าง
-            throw new NotImplementedException();
+            if (backHistory.Count == 0) return;
+            backHistory.Pop();
+
+            
         }
 
         /// <summary>ไปข้างหน้าไปยังหน้าล่าสุดในประวัติไปข้างหน้าหนึ่งขั้น</summary>
@@ -52,7 +55,10 @@ namespace MidtermExam.Prob02
         public void Forward()
         {
             // TODO: เขียนคำตอบแทนคำสั่ง throw exception ด้านล่าง
-            throw new NotImplementedException();
+            if (forwardHistory.Count == 0) return;
+            forwardHistory.Pop();
+
+
         }
 
         /// <summary>อ่าน URL ของหน้าปัจจุบัน โดยไม่เปลี่ยนหน้าหรือประวัติใด ๆ</summary>
